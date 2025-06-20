@@ -45,7 +45,8 @@ const submitForm = async () => {
       logEvent(analytics, 'contact_form_submitted', {
         name: name.value,
         email: email.value,
-        messageLength: message.value.length
+        messageLength: message.value.length,
+        response: data
       })
 
       status.value = '¡Mensaje enviado con éxito!'
